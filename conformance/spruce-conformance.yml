@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/spruceid
+description: >-
+  Cross-cutting identity/credential standards that SpruceID's published open-source libraries
+  implement. SpruceID does not expose a hosted REST API, so conformance here is asserted at
+  the library level, with each entry's evidence pointing at the first-party crate/repo that
+  implements the standard. These are implementation claims sourced from the SpruceID GitHub
+  organization and package metadata, not a certified compliance program.
+standards:
+  - id: w3c-verifiable-credentials
+    conforms: true
+    evidence: "ssi crate (github.com/spruceid/ssi) — Core library for Verifiable Credentials and Decentralized Identifiers"
+  - id: w3c-did
+    conforms: true
+    evidence: "ssi crate (github.com/spruceid/ssi) — Decentralized Identifier resolution and methods"
+  - id: iso-18013-5-mdl
+    conforms: true
+    evidence: "isomdl crate (github.com/spruceid/isomdl) — ISO/IEC 18013-5 mobile driver's license implementation"
+  - id: openid4vp
+    conforms: true
+    evidence: "openid4vp crate + github.com/spruceid/openid4vp — OpenID Connect for Verifiable Presentations"
+  - id: openid4vci
+    conforms: true
+    evidence: "github.com/spruceid/oid4vci-rs — OpenID for Verifiable Credential Issuance"
+  - id: siwe-eip-4361
+    conforms: true
+    evidence: "@spruceid/siwe-parser + github.com/spruceid/siwe-rs — Sign-In with Ethereum (EIP-4361)"
+  - id: oauth2-oidc
+    conforms: true
+    evidence: "OpenID4VP/OpenID4VCI build on the OAuth 2.0 / OpenID Connect framework"
+  - id: fhir-r4
+    conforms: false
+  - id: scim-2.0
+    conforms: false

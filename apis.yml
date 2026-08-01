@@ -1,8 +1,16 @@
 aid: spruce
-name: Spruce
-description: Spruce is a company surfaced as a portfolio company of a16z, bessemer-venture-partners, cowboy-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+name: SpruceID
+description: >-
+  SpruceID is a digital trust infrastructure company building open-source software for
+  digital identity — verifiable credentials, decentralized identifiers (DIDs), mobile
+  driver's licenses (mDL, ISO/IEC 18013-5), and identity wallets. Its developer surface is
+  a suite of open-source libraries and SDKs: the Rust `ssi` core library for Verifiable
+  Credentials and DIDs, `isomdl` (ISO mDL), `openid4vp` (OpenID for Verifiable
+  Presentations) and `oid4vci-rs` (OpenID for Verifiable Credential Issuance), plus the
+  SpruceKit / SSX JavaScript & TypeScript SDKs and the SpruceKit mobile (Swift/Kotlin)
+  wallet libraries. SpruceID works with government agencies to modernize identity,
+  verification, and secure data exchange with privacy-preserving, standards-based
+  architecture. Backed by a16z.
 url: https://raw.githubusercontent.com/api-evangelist/spruce/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,14 +20,71 @@ x-backed-by:
 - cowboy-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://github.com/spruceid.png
 tags:
 - Company
+- Digital Identity
+- Verifiable Credentials
+- Decentralized Identifiers
+- Mobile Driver's License
+- Identity Wallet
+- OpenID4VP
+- OpenID4VCI
+- Self-Sovereign Identity
+- Government
 apis: []
+common:
+- type: DomainSecurity
+  url: security/spruce-domain-security.yml
+- type: Website
+  url: https://spruceid.com
+- type: DeveloperPortal
+  url: https://docs.sprucekit.dev/
+- type: Documentation
+  url: https://docs.sprucekit.dev/
+- type: GettingStarted
+  url: https://docs.sprucekit.dev/
+- type: GitHubOrganization
+  url: https://github.com/spruceid
+- type: Blog
+  url: https://blog.spruceid.com/
+- type: Support
+  url: https://spruceid.com/contact-us
+- type: PrivacyPolicy
+  url: https://spruceid.com/privacy-policy
+- type: TermsOfService
+  url: https://spruceid.com/terms-of-use
+- type: Packages
+  url: packages/spruce-packages.yml
+- type: SDKs
+  url: packages/spruce-packages.yml
+- type: LLMsTxt
+  url: llms/spruce-llms.txt
+- type: Conformance
+  url: conformance/spruce-conformance.yml
+- type: Components
+  url: components/spruce-components.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

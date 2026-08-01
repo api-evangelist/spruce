@@ -1,0 +1,126 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/spruceid
+description: >-
+  First-party SpruceID open-source client libraries and SDKs, verified against the public
+  package registries (crates.io via https://crates.io/api/v1/crates/*, npm via
+  https://registry.npmjs.org) and the SpruceID GitHub organization
+  (https://github.com/spruceid). SpruceID ships identity tooling as libraries rather than a
+  hosted REST API: the Rust `ssi` stack (VCs/DIDs), the SpruceKit / SSX JavaScript/TypeScript
+  SDKs, DIDKit WASM bindings, and the SpruceKit mobile wallet SDK. Registry front-ends return
+  403 to automated clients; crate metadata confirmed via the crates.io JSON API.
+packages:
+  # --- Rust crates (crates.io) ---
+  - language: rust
+    registry: crates.io
+    name: ssi
+    url: https://crates.io/crates/ssi
+    source: https://github.com/spruceid/ssi
+    install: cargo add ssi
+    version: 0.16.0
+    official: true
+    note: Core library for Verifiable Credentials and Decentralized Identifiers.
+  - language: rust
+    registry: crates.io
+    name: isomdl
+    url: https://crates.io/crates/isomdl
+    source: https://github.com/spruceid/isomdl
+    install: cargo add isomdl
+    version: 0.2.0
+    official: true
+    note: ISO/IEC 18013-5 mobile driver's license (mDL) implementation in Rust.
+  - language: rust
+    registry: crates.io
+    name: openid4vp
+    url: https://crates.io/crates/openid4vp
+    source: https://github.com/spruceid/openid4vp
+    install: cargo add openid4vp
+    version: 0.1.0
+    official: true
+    note: OpenID Connect for Verifiable Presentations (OpenID4VP) in Rust.
+  # --- npm (@spruceid scope) ---
+  - language: javascript
+    registry: npm
+    name: "@spruceid/ssx"
+    url: https://www.npmjs.com/package/@spruceid/ssx
+    source: https://github.com/spruceid/ssx
+    install: npm install @spruceid/ssx
+    official: true
+    note: SSX — brings self-sovereign identity (SSI) to JS/TS apps.
+  - language: javascript
+    registry: npm
+    name: "@spruceid/ssx-core"
+    url: https://www.npmjs.com/package/@spruceid/ssx-core
+    source: https://github.com/spruceid/ssx
+    install: npm install @spruceid/ssx-core
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@spruceid/ssx-react"
+    url: https://www.npmjs.com/package/@spruceid/ssx-react
+    source: https://github.com/spruceid/ssx
+    install: npm install @spruceid/ssx-react
+    official: true
+    note: SSX React hooks.
+  - language: javascript
+    registry: npm
+    name: "@spruceid/ssx-server"
+    url: https://www.npmjs.com/package/@spruceid/ssx-server
+    source: https://github.com/spruceid/ssx
+    install: npm install @spruceid/ssx-server
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@spruceid/sprucekit"
+    url: https://www.npmjs.com/package/@spruceid/sprucekit
+    source: https://github.com/spruceid/sprucekit-sdk
+    install: npm install @spruceid/sprucekit
+    official: true
+    note: SpruceKit — identity solution enabling SSI in JS/TS apps.
+  - language: javascript
+    registry: npm
+    name: "@spruceid/sprucekit-server"
+    url: https://www.npmjs.com/package/@spruceid/sprucekit-server
+    source: https://github.com/spruceid/sprucekit-sdk
+    install: npm install @spruceid/sprucekit-server
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@spruceid/verify-sdk"
+    url: https://www.npmjs.com/package/@spruceid/verify-sdk
+    install: npm install @spruceid/verify-sdk
+    official: true
+    note: TypeScript SDK for SpruceID Verify.
+  - language: javascript
+    registry: npm
+    name: "@spruceid/didkit-wasm"
+    url: https://www.npmjs.com/package/@spruceid/didkit-wasm
+    source: https://github.com/spruceid/didkit
+    install: npm install @spruceid/didkit-wasm
+    official: true
+    note: DIDKit WASM bindings (browser) — issue/verify VCs, manage DIDs.
+  - language: javascript
+    registry: npm
+    name: "@spruceid/didkit-wasm-node"
+    url: https://www.npmjs.com/package/@spruceid/didkit-wasm-node
+    source: https://github.com/spruceid/didkit
+    install: npm install @spruceid/didkit-wasm-node
+    official: true
+    note: DIDKit WASM bindings (Node.js).
+  - language: javascript
+    registry: npm
+    name: "@spruceid/siwe-parser"
+    url: https://www.npmjs.com/package/@spruceid/siwe-parser
+    source: https://github.com/spruceid/siwe-rs
+    install: npm install @spruceid/siwe-parser
+    official: true
+    note: Parser for Sign-In with Ethereum (EIP-4361) messages.
+  # --- Mobile (Swift Package Manager) ---
+  - language: swift
+    registry: swift-package-manager
+    name: SpruceIDMobileSdk
+    url: https://github.com/spruceid/sprucekit-mobile
+    source: https://github.com/spruceid/sprucekit-mobile
+    install: "Swift Package: https://github.com/spruceid/sprucekit-mobile"
+    official: true
+    note: SpruceKit mobile SDK — integrate verifiable credentials and mDL into iOS apps.

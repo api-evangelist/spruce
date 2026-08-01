@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: live probe of /.well-known/ on spruceid.com
+description: >-
+  Results of probing the /.well-known/ discovery surface for the SpruceID website host.
+  www.spruceid.com 308-redirects to the apex spruceid.com; every probed path on the apex
+  returned 404. SpruceID publishes no OpenID/OAuth discovery, api-catalog, ai-plugin, or
+  security.txt document. Absence is recorded as valid data (no WellKnown/APICatalog pointer
+  is emitted in apis.yml because no document exists).
+hosts:
+  - host: https://spruceid.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
